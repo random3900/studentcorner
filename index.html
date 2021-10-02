@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="https://img.icons8.com/fluency/48/000000/student-female.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <title>Student Corner</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+      <div class="container">
+        <a href="/index.html" class="navbar-brand">Student Corner</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a target="_blank" href="https://svvv.edu.in/Department/SyllabusInformation%20Technology/Syllabus-SVIIT-IT-BTech(IT)-V-2018-19_21.12.2020.pdf" class="nav-link">Syllabus</a>
+            </li>
+            <li class="nav-item">
+              <a target="_blank" href="https://svvv.edu.in/Department/SyllabusInformation%20Technology/Master_Scheme-SVIIT-IT-BTech(IT)-V-2018-19_21.12.2020.pdf" class="nav-link">Scheme</a>
+            </li>
+            <li class="nav-item">
+              <a href="#questions" class="nav-link">FAQs</a>
+            </li>
+            <li class="nav-item">
+              <a href="#instructors" class="nav-link">Instructors Info</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contactus" class="nav-link">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Showcase -->
+    <section
+      class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start"
+    >
+      <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-between">
+          <div>
+            <h1>Become a <span class="text-warning"> Learner </span></h1>
+            <p class="lead my-4">
+              Hey Everyone's Welcome to Student Corner. This website aims to
+              keep you up with the online classes and examinations. This website is
+              completely made for current students of
+              <b><i> IT-A V<sup>th</sup> Semester</i></b> of <br />
+              <a href="https://svvv.edu.in/" target="_blank"
+                ><b>Shri Vaishnav Vidyapeeth Vishwavidyala</b></a
+              >.
+            </p>
+            <button
+              class="btn btn-primary btn-lg"
+              data-bs-toggle="modal"
+              data-bs-target="#enroll"
+            >
+              Let us begin
+            </button>
+          </div>
+          <img
+            class="img-fluid w-50 d-none d-sm-block"
+            src="img/showcase.svg"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Time Table -->
+    <section class="bg-primary text-light p-3 text-center">
+      <div class="container">
+        <div class="d-sm-inline-flex justify-content-center align-items-center">
+          <h3 class="mb-3 mb-md-0">Looking for Time Table ?</h3>
+          <a href="https://ballen38-creator.github.io/timetable/" target="_blank" class="ms-2 btn btn-dark">Click here</a>
+        </div>
+      </div>
+    </section>
+    <!-- Subjects -->
+    <div id="subjects">
+      <ul class=" nav nav-pills justify-content-center ">
+        <li title="Aritificial Intelligence" class="nav-item border"><a class="nav-link" href="/Subjects/AI.html">AI(BTCS511)</a></li>
+        <li title="Distributed System" class="nav-item border"><a class="nav-link" href="/Subjects/DS.html">DS(BTIT713)</a></li>
+        <li title="Cyber and Network Security" class="nav-item border"><a class="nav-link" href="./Subjects/CNS.html">CNS(BTIT603)</a></li>
+        <li title="Computer Graphics and Multimedia" class="nav-item border"><a class="nav-link" href="./Subjects/CGM.html">CGM(BTCS503)</a></li>
+        <li title="Information and Storage Management" class="nav-item border"><a class="nav-link" href="./Subjects/ISM.html">ISM(BTIT611)</a></li>
+        <li title="Programming with Python" class="nav-item border"><a class="nav-link" href="./Subjects/python.html">Python(BTCS407)</a></li>
+        <li title="Scripting Languages" class="nav-item border"><a class="nav-link" href="./Subjects/SL.html">SL(BTCS607)</a></li>
+      </ul>
+    </div>
+    <!-- Subject -->
+    <!-- Question Accordion -->
+    <section id="questions" class="p-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+        <div class="accordion accordion-flush" id="questions">
+          <!-- Item 1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-one"
+              >
+                What is this website about?
+              </button>
+            </h2>
+            <div
+              id="question-one"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                This is a student website by the students for the students.
+                All the material here is provided by students. This website aims to help students during examinations, assignments
+                and all university stuff.
+              </div>
+            </div>
+          </div>
+          <!-- Item 2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-two"
+              >
+                Do you provide study material?
+              </button>
+            </h2>
+            <div
+              id="question-two"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                Yes, a lot of study material is available on the site. If you wish for more you can contact The Professor for help in any matter.
+              </div>
+            </div>
+          </div>
+          <!-- Item 3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-three"
+              >
+               Do you provide assignments?
+              </button>
+            </h2>
+            <div
+              id="question-three"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                Yes but actually no, we do not share assignments here but we do provide updates about pending assignments,projects, college work etc. to students via mail.
+                If you wish to receive updates about assignments then you can submit your details by clicking on the 'Let us Begin' button in header of website.
+              </div>
+            </div>
+          </div>
+          <!-- Item 4 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-four"
+              >
+                Can I upload files to this website to share with other students ?
+              </button>
+            </h2>
+            <div
+              id="question-four"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                No, you cannot upload files to this website however you can mail them to The Professor requesting him to upload files.
+              </div>
+            </div>
+          </div>
+          <!-- Item 5 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-six"
+              >
+                Are PYQs available on this site ?
+              </button>
+            </h2>
+            <div
+              id="question-six"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                No, PYQs are not available.
+              </div>
+            </div>
+          </div>
+          <!-- Item 6 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-five"
+              >
+                Who created this website?
+              </button>
+            </h2>
+            <div
+              id="question-five"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                This website is created by The Professor.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="instructors" class="p-5 bg-primary">
+      <div class="container">
+        <h2 class="text-center text-white">Our Instructors</h2>
+        <h4 class="text-light text-center mb-2">
+          Department of Information Technology
+        </h4>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img src="./img/1.png" width=128 height=128 class="rounded-circle mb-3" alt="" />
+                <h3 class="card-title fs-5 mb-3">Dr. Jigyasu Dubey</h3>
+                <p class="card-text">
+                  CNS <br> [BTIT603]
+                </p>
+                <a href="mailto:headit@svvv.edu.in"><i class="bi bi-envelope text-dark mx-1"></i></a>
+                <code>headit@svvv.edu.in</code>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img src="./img/2.png" width=128 height=128 class="rounded-circle mb-3" alt="" />
+                <h3 class="card-title fs-5 mb-3">Prof. Sumit Nigam</h3>
+                <p class="card-text">
+                  SL <br> [BTIT607]
+                </p>
+                <a href="mailto:nigam.sumit@svvv.edu.in"><i class="bi bi-envelope text-dark mx-1"></i></a>
+                <code>nigam.sumit@svvv.edu.in</code>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img src="./img/5.png" width=128 height=128 class="rounded-circle mb-3" alt="" />
+                <h3 class="card-title fs-5 mb-3">Prof. Richa Jain</h3>
+                <p class="card-text">
+                  DS <br> [BTIT713]
+                </p>
+                <a href="mailto:it.richajain@gmail.com"><i class="bi bi-envelope text-dark mx-1"></i></a>
+                <code>it.richajain@gmail.com</code>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img src="./img/8.png" width=128 height=128 class="rounded-circle mb-3" alt="" />
+                <h3 class="card-title fs-5 mb-3">Prof. Rani Singh</h3>
+                <p class="card-text">
+                  AI <br> [BTCS511]
+                </p>
+                <a href="mailto:ranisingh@svvv.edu.in"><i class="bi bi-envelope text-dark mx-1"></i></a>
+                <code>ranisingh@svvv.edu.in</code>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img src="./img/7.png" width=128 height=128 class="rounded-circle mb-3" alt="" />
+                <h3 class="card-title fs-5 mb-3">Prof. Isha Chopra</h3>
+                <p class="card-text">
+                CGM <br> [BTCS503]
+                </p>
+                <a href="mailto:isshchopra08@gmail.com"><i class="bi bi-envelope text-dark mx-1"></i></a>
+                <code>isshchopra08@gmail.com</code>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img src="./img/4.png" width=128 height=128 class="rounded-circle mb-3" alt="" />
+                <h3 class="card-title fs-5 mb-3">Prof. Chetan Verma</h3>
+                <p class="card-text">
+                  ISM <br> [BTIT611]
+                </p>
+                <a href="mailto:chetanverma@svvv.edu.in"><i class="bi bi-envelope text-dark mx-1"></i></a>
+                <code>chetanverma@svvv.edu.in</code>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img src="./img/6.png" width=128 height=128 class="rounded-circle mb-3" alt="" />
+                <h3 class="card-title fs-5 mb-3">Prof. Abhishek Kori</h3>
+                <p class="card-text">
+                  Python <br> [BTCS407]
+                </p>
+                <div class="d-sm-flex flex-row  justify-content-center align-items-center">
+                <a href="mailto:abhishekkori.rgpv@gmail.com"><i class="bi bi-envelope text-dark mx-1"></i></a>
+                <small><code>abhishekkori.rgpv@gmail.com</code></small>
+              </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img src="./img/3.png" width=128 height=128 class="rounded-circle mb-3" alt="" />
+                <h3 class="card-title fs-5 mb-3">Prof. Jitendra Sharma</h3>
+                <p class="card-text">
+                  CNS <br> [BTIT603]
+                </p>
+                <div class="d-flex flex-row flex-wrap justify-content-center align-items-center">
+                <a href="mailto:jitendrasharma@svvv.edu.in"><i class="bi bi-envelope text-dark mx-1"></i></a>
+                <small><code>jitendrasharma@svvv.edu.in</code></small>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact  -->
+    <section class="p-5" id="contactus">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md">
+            <h2 class="text-center align-items-center mb-4">Contact Info</h2>
+            <ul class="list-group list-group-flush lead" id="contact-info">
+              <li class="list-group-item">
+                <i class="bi bi-instagram text-dark mx-1"></i><span class="fw-bold">Instagram:</i></span>
+                @ballen38_creator
+              </li>
+              <li class="list-group-item">
+                <i class="bi bi-twitter text-dark mx-1"></i><span class="fw-bold">Twitter:</span>
+                @Ballen38Creator
+              </li>
+              <li class="list-group-item">
+                <i class="bi bi-envelope text-dark mx-1"></i><span class="fw-bold">Email:</span>
+                elprofessor101@gmail.com
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+      <div class="container">
+        <p class="lead">Copyright &copy; 2021 Student Corner</p>
+
+        <a href="#" class="position-absolute bottom-0 end-0 p-5">
+          <i class="bi bi-arrow-up-circle h1"></i>
+        </a>
+      </div>
+    </footer>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="enroll"
+      tabindex="-1"
+      aria-labelledby="enrollLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="enrollLabel">Enrollment</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="lead">Fill out this form and you will be added to the professor's mailing list. </p>
+            <form method="POST" id="detail" data-netlify="true">
+              <div class="mb-3">
+                <label for="first-name" class="col-form-label">
+                  First Name:
+                </label>
+                <input type="text" class="form-control" id="first-name" name="first-name" required />
+              </div>
+              <div class="mb-3">
+                <label for="last-name" class="col-form-label">Last Name:</label>
+                <input type="text" class="form-control" id="last-name" name="last-name" required />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="col-form-label">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" required />
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="col-form-label">Phone:</label>
+                <input type="tel" class="form-control" id="phone" name="phone" />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="submit" form="detail" value="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script data-ad-client="ca-pub-8442477646737859" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

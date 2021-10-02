@@ -1,2 +1,8 @@
-# studentcorner
-Website for college students of third year in SVVV, INDORE
+# Student Website for College
+
+> Notes, PPTs, PYQs and stuff.
+
+
+
+### Website Link
+https://www.frontendbootcampdemo.com/
