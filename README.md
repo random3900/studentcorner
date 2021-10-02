@@ -1,6 +1,6 @@
 # Student Website for College
 
-> Notes, PPTs, PYQs and stuff.
+> Notes, PPTs, links and stuff.
 
 
 
