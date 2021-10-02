@@ -5,4 +5,4 @@
 
 
 ### Website Link
-https://www.frontendbootcampdemo.com/
+https://www.student-corner.netlify.com/
