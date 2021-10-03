@@ -62,3 +62,4 @@ git push
 **15.** Voila :exclamation: You just made your contirbution to Student Corner
 ## Note
 Your contributions will not be directly reflected in the studentcorner website but they will be added soon from this repository.
+Try to provide screenshots of the changes you made.
