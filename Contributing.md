@@ -1,6 +1,6 @@
 # Contributing Guidelines
 
-We would love to accept your contributions! To start contributing, follow the below guidelines:
+To start contributing, follow the below guidelines:
 
 **1.** Fork [this](https://github.com/ballen38-creator/studentcorner) repository.
 
