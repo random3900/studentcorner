@@ -34,12 +34,6 @@ git remote -v
 git pull upstream master
 ```
 
-**7.** Create a new branch.
-
-```
-git checkout -b <your_branch_name>
-```
-
 **8.** Perform your desired changes to the code base.
 
 **9.** Track your changes:heavy_check_mark: .
@@ -53,19 +47,18 @@ git add .
 git commit -m "Relevant message"
 ```
 
-**11.** Push the committed changes in your feature branch to your remote repo.
+**11.** Push the committed changes .
 
 ```
-git push -u origin <your_branch_name>
+git push
 ```
 
-**12.** To create a pull request, click on `compare and pull requests`. Please ensure that you compare your feature branch to the desired branch of the repo you are supposed to make a PR to.
+**12.** To create a pull request, click on `compare and pull requests`. 
 
 **13.** Add an appropriate title and description to your pull request explaining your changes and efforts done.
 
 **14.** Click on `Create Pull Request`.
 
-**15.** Voila :exclamation: You have made a PR to the Community Classroom repository :boom: Sit back patiently and relax while the project maintainers review your PR. Please understand at times the duration can vary from a few hours to a few days.
-
+**15.** Voila :exclamation: You just made your contirbution to Student Corner
 ## Note
 Your contributions will not be directly reflected in the studentcorner website but they will be added soon from this repository.
