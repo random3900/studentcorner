@@ -2,7 +2,7 @@
 
 We would love to accept your contributions! To start contributing, follow the below guidelines:
 
-**1.** Fork [this](url) repository.
+**1.** Fork [this](https://github.com/ballen38-creator/studentcorner) repository.
 
 **2.** Clone your forked copy of the project.
 
