@@ -20,10 +20,6 @@ body{
   }
 }
 
-/* .nav-link :hover {
-  color:black;
-
-} */
 .nav-item :hover {
   color:black;
   font-size: 1.1em;
