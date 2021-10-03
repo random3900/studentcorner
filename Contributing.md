@@ -19,7 +19,7 @@ cd studentcorner
 
 **4.** Add a reference(remote) to the original repository.
 ```
-git remote add upstream https://github.com/ballen38_creator/studentcorner.git
+git remote add upstream https://github.com/ballen38-creator/studentcorner.git
 ```
 
 **5.** Check the remotes for this repository.
