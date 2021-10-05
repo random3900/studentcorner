@@ -8,6 +8,9 @@ body{
   overflow-x: hidden;
 }
 
+.resourse-title{
+  margin-top: 5%;
+}
 @media (min-width: 768px) {
   .news-input {
     width: 50%;
@@ -25,4 +28,9 @@ body{
   color:white;
   font-size: 1.1em;
   font-weight: 600;
+}
+@media (max-width: 768px) {
+  .resourse-title{
+    margin-top: 10%;
+  }
 }
