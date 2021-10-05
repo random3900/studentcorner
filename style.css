@@ -26,8 +26,10 @@ body{
 .nav-pills .nav-item :hover {
   background-color: black;
   color:white;
-  font-size: 1.1em;
+  transform: scale(1.1);
+  transition: all 150ms, color 0ms;
   font-weight: 600;
+  margin: 0 -0.135em;
 }
 @media (max-width: 768px) {
   .resourse-title{
